@@ -117,14 +117,18 @@
   .catalog_main_block.sect .catalog_main_prod_img:hover > .hovr_block.sect {
   height: 35px;
  }
-  .cg_icon {
+ .hovr_block .cg_icon {
   	top: 5px;
-  	left: 1px;
+  	left: 7px;
   	width: 26px;
   	height: 26px;
   	border: 1px solid #fff;
-  	background-size: contain !important;
+  	background-size: 60%;
   }
+ .hovr_block  .cg_icon.cg_1,
+  .hovr_block  .cg_icon.cg_3 {
+ 	 	background-size: 42%;
+ }
   .catalog_list {
   	padding-left: 30px;
   }
@@ -182,11 +186,14 @@
 }
 
 	.left_menu .catalog_part a img {
-	  margin-top: -15px;
-	  width: 21px;
-	  height: 27px;
-	  left: 2px;
-	}
+	  width: 20px;
+	  height: 24px;
+	 }
+	 .menu_icon {
+	 	top: 60%;
+	 	left: 0;
+	 	width: 24px;
+	 }
 	.left_menu .catalog_part a {
 		padding-left: 23px;
 		font-size: 11.7px;
@@ -198,7 +205,7 @@
 	.main_content {
 		width: 430px;
 	}
-	.circle_white, .circle_blue {
+	.circle_white {
 		right: 3px;
 	}
 	.left_menu .catalog_part_level_1 a {
@@ -1049,6 +1056,9 @@ box-shadow: inset 0px 3px 11px -3px rgba(0,0,0,0.5);
 	}
 }
 @media only screen and (max-width : 450px) {
+	 .hovr_block .cg_icon {
+	 	left: 1px;
+	 }
 	.feedback {
     background: url(../img/fb_bg.jpg) 100% no-repeat #fff;
   }
@@ -1166,7 +1176,7 @@ box-shadow: inset 0px 3px 11px -3px rgba(0,0,0,0.5);
 	.catalog_main_block.sect .catalog_main_prod_img:hover > .hovr_block.sect {
   height: 60px;
   }
-	.cg_icon {
+	.hovr_block .cg_icon {
 	  top: 9px;
 	  left: 20px;
 	  width: 44px;

@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 
 //---submenu---
-$('.ul_level_1').hide();
+
 	$('.catalog_part_level_1').on('click', function() {
 		     $(this).children('ul').slideToggle(300);
 	   });
