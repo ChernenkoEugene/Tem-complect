@@ -54,7 +54,8 @@ html {
 .wrapper {
   position: relative;
   min-height: 100%;
-
+  background: #000;
+  background: url(../img/main_bg.jpg) no-repeat;
 }
 .content {
   padding-bottom: 117px;
@@ -106,7 +107,8 @@ textarea::-moz-placeholder {
 }
 
 a {
-  text-decoration: none; 
+  text-decoration: none;
+  cursor: pointer;
 }
 .tdu {
   text-decoration: underline;
@@ -134,6 +136,7 @@ a {
 }
 
 .main_logo {
+  display: block;
   text-align: center;
   margin-top: 12px;
   margin-left: 35px;
@@ -269,26 +272,17 @@ a {
 .mobile_menu_btn_opn {
   display: none;
   position: absolute;
-  top: 10px;
-  right: 8px;
-  width: 43px;
-  height: 20px;
+  top: 7px;
+  right: 13px;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
   margin-bottom: 4px;
   z-index: 4;
 }
-.mobile_menu_btn_opn:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 43px;
-  height: 3px;
-  background: #fff;
-  border-radius:2px;
-  box-shadow: 
-    0 9px 0 0 #fff,
-    0 18px 0 0 #fff;
+.mobile_menu_btn_opn img {
+  width: 30px;
+  height: 30px;
 }
 .mobile_btns .mobile_tel_popup {
   display: none;
@@ -428,6 +422,9 @@ a {
   -o-transition: all 0.3s;
   transition: all 0.3s;
   cursor: pointer;
+  -webkit-box-shadow: 1px 0px 0px 0px rgba(62,104,150,1);
+-moz-box-shadow: 1px 0px 0px 0px rgba(62,104,150,1);
+box-shadow: 1px 0px 0px 0px rgba(62,104,150,1);
 }
 
 
@@ -587,12 +584,12 @@ a {
 }
 .circle_white {
   position: absolute;
-  top: 50%;
+  top: 52%;
   margin-top: -9px;
-  right: 4px;
+  right: 0px;
   cursor: pointer;
-  width: 18px;
-  height: 18px;
+  width: 22px;
+  height: 30px;
   background: url(../img/sprite1.png) no-repeat -114px -1px;
 }
 
@@ -601,12 +598,12 @@ a {
 }
 .circle_blue{
  position: absolute;
-  top: 50%;
+  top: 49%;
   margin-top: -9px;
-  right: 0px;
+  right: -1px;
   cursor: pointer;
-  width: 22px;
-  height: 22px;
+  width: 24px;
+  height: 24px;
   background: url(../img/down.svg) no-repeat;
   
 }
@@ -641,6 +638,9 @@ a {
   display: inline-block;
   vertical-align: middle;
   line-height: 1.25;
+}
+.left_menu .catalog_part_level_2 a span:hover {
+ text-decoration: underline;
 }
 /*=======================================aside_left_____end======================================*/
 
@@ -693,6 +693,9 @@ a {
   background: #fff;
   margin-bottom: 5px;
 }
+.bx-wrapper .bx-controls-direction a {
+  z-index: 10;
+}
 .m_slider .bx-wrapper .bx-pager.bx-default-pager a:hover, 
 .m_slider .bx-wrapper .bx-pager.bx-default-pager a.active {
   background: #F42026;
@@ -719,8 +722,12 @@ a {
   color: #fff;
   font-size: 14px;
   margin-top: -3px;
+  transition: all 0.3s;
 }
-
+.m_slider .slide_details a:hover {
+  color: #e09595;
+  transition: all 0.3s;
+}
 .why_us .col-xs-3 {
   text-align: center;
 }
@@ -739,8 +746,10 @@ a {
   background-color: #DAE9F4;
   border-radius: 50%;
   text-align: center;
-  padding-top: 17px;
   margin: 8px auto;
+}
+.why_us_block.map {
+  padding-top: 20px;
 }
 .why_us_text {
    font-size: 14px;
@@ -805,15 +814,24 @@ a {
   display: block;
   color: #889196;
   margin-top: -3px;
+  transition: all 0.3s;
 }
-
+.new_product_details:hover {
+  color: #46748e;
+  transition: all 0.3s;
+}
 .and_other {
   font-family: "PTSansBold";
   font-size: 18px;
   color: #889196;
   text-align: center;
+  transition: all 0.3s;
 }
-
+.and_other:hover {
+  color: #5f8ea9;
+  transition: all 0.3s;
+  text-decoration: underline;
+}
 .selling_block {
   text-align: center;
   margin-top: 40px;
@@ -923,7 +941,12 @@ a {
   color: #889196;
   font-family: "PTSansBold";
   text-align: center;
+  transition: all 0.3s;
+}
 
+.our_projects_else:hover {
+  color: #5f8ea9;
+  transition: all 0.3s;
 }
 .our_location {
   margin-top: 45px;
@@ -1101,6 +1124,11 @@ a {
   margin-left: 46px;
   margin-top: -15px;
   z-index: 2;
+  transition: all 0.3s;
+}
+.fb_form .fb_form_submit:hover {
+   background-color: #ec1530;
+   transition: all 0.3s;
 }
 /*=======================================main_content_____end======================================*/
 
@@ -1675,8 +1703,13 @@ a {
 .catalog_main_block.sect .hovr_block.sect {
   padding-left: 0;
 }
+ .catalog_main_block.sect .catalog_main_prod_img .hovr_block {
+  height: 100%;
+  padding-top: 100px;
+}
  .catalog_main_block.sect .catalog_main_prod_img:hover > .hovr_block {
   height: 60px;
+  padding-top: 20px;
 }
 
 
@@ -1780,8 +1813,14 @@ a {
   margin-bottom: 10px;
 }
 .news_page_img {
+  display: block;
   border: 1px solid #7E9AB9;
   text-align: center;
+  transition: all 0.3s;
+}
+.news_page_img:hover {
+  border: 1px solid #333;
+  transition: all 0.3s;
 }
 .news_page_img img {
   width: 100%;
@@ -1800,8 +1839,12 @@ a {
 .news_details {
   text-decoration: underline;
   color: #889196;
+  transition: all 0.3s;
 }
-
+.news_details:hover {
+  color: #46748e;
+  transition: all 0.3s;
+}
 .news_art{
   padding: 25px 25px;
   margin-bottom: 50px;
@@ -1915,16 +1958,7 @@ a {
 .lend_block p {
   padding-left: 5px;
 }
-.mobile_close_menu {
-  display: none;
-  height: 30px;
-  background-color: #0F5FB3;
-}
 
-.mobile_close_menu .close_but {
-  right: 13px;
-  top: 8px;
-}
 .mobile_mn {
   position: absolute;
   top: 0;
@@ -1934,4 +1968,84 @@ a {
   display: none;
   z-index: 3;
   cursor: pointer;
+}
+
+
+.pop_form {
+  width: 250px;
+}
+.pop_form input[type="text"] {
+   display: block;
+   font-size: 12px;
+   margin: 0 auto 20px;
+   width: 220px;
+   height: 35px;
+   border: 1px solid #fff;
+   background: #0F5FB3;
+   color: #fff;
+   padding-left: 12px;
+}
+
+.pop_form input::-webkit-input-placeholder {
+  color: #fff;
+  font-size: 12px;
+  }
+.pop_form input::-moz-placeholder {
+  color: #fff;
+  font-size: 12px;
+}
+
+.pop_form h3 {
+  margin: 10px auto 15px;
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.pop_form .submit {
+  text-align: center;
+  line-height: 35px;
+  display: block;
+  width: 220px;
+  height: 35px;
+  background-color: #fff;
+  color: #0F5FB4;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 auto 10px;
+  box-shadow: 2px 3px 10px rgba(0,0,0,.5);
+}
+.fancybox-opened:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 50px;
+  height: 50px;
+  background: url(../img/phone-call.png) 44% no-repeat;
+  background-size: 57%;
+  background-color: #2E7DD0;
+  border-radius: 50%;
+  z-index: 9999;
+  box-shadow: 0 3px 20px rgba(0,0,0,.5);
+}
+.call_icon img {
+  width: 80%;
+  height: 80%;
+}
+.pop_form h4 {
+  margin: 0px auto 17px;
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.pop_form p {
+  text-align: center;
+  margin-top: -10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #fff;
 }

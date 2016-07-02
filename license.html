@@ -15,14 +15,15 @@
 	<link rel="stylesheet" href="css/main.css" />
 	<link rel="stylesheet" href="css/responsive.css" />
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid-3.3.1.min.css" />
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
 </head>
 <body>
 	<div class="wrapper">
-		<header class="top_header">
+<header class="top_header">
 			<div class="main_head">
 				<div class="row">
 					<div class="col-xs-4">
-						<div class="main_logo">
+						<a href="index.html" class="main_logo">
 							<img src="img/m_logo.png" alt="">
 							<div class="main_logo_compl">
 								<span >Комплект</span>
@@ -30,7 +31,7 @@
 							<div class="main_logo_slogan">
 								<span>Профессионализм. Надежность. Качество.</span>
 							</div>
-						</div>
+						</a>
 					</div>
 					<div class="col-xs-4 mob_big">
 						<div class="main_title">
@@ -68,7 +69,7 @@
 								<div class="head_contacs_links">
 									<a href="tel:+74992715918" class="tel_num">+7 (499) 271-59-18</a>
 									<a href="tel:+74992715918" class="tel_num second_num">+7 (499) 271-59-18</a>
-									<a href="" class="order_call tdu">заказать звонок</a>
+									<a href="#callback" class="order_call tdu fancybox">заказать звонок</a>
 									<a href="mailto:info@tem-k.ru" class="head_contacs_mail tdu">info@tem-k.ru</a>
 								</div>
 								<div class="head_contacs_icons">
@@ -93,7 +94,9 @@
 							</form>
 						</li>
 						<div class="mobile_nav">
-							<div class="mobile_menu_btn_opn"></div>
+							<div class="mobile_menu_btn_opn">
+							<img src="img/cross.svg" alt="">
+							</div>
 							<li class="uncover ttu">главная
 								<ul class="main_submenu">
 									<li><a><p>Направления деятельности</p></a></li>
@@ -139,12 +142,7 @@
 							</div>
 						</li>
 						<div class="mob_wrap">
-							<li class="mobile_close_menu">
-								<div class="close_but">
-									<div class="cross">
-										&times;
-									</div>
-								</div>
+						
 							<li class="catalog_part ttu">
 								<a >
 									<div class="menu_icon">
@@ -534,6 +532,18 @@
 				</div>
 			</footer>
 		</div>
+		<div class="hidden">
+					<form id="callback" class="pop_form">
+						<h3>Заказать звонок</h3>
+						<input type="text" name="name" placeholder="Ваше имя" required />
+						<input type="text" name="phone" placeholder="Ваше телефон" required />
+						<input type="submit" href="#thank" class="submit fancybox" value="Заказать" />
+					</form>
+					<form id="thank" class="pop_form">
+						<h4>Спасибо</h4>
+						<p>За обращение в нашу компанию, в ближайшее время наши специалисты свяжутся с Вами!</p>
+					</form>
+				</div>
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
@@ -542,6 +552,7 @@
 	<![endif]-->
 	<script src="libs/jquery/jquery-1.12.3.min.js"></script>
 	<script src="js/common.js"></script>
+	<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
 	<script type="text/javascript"> 	
 
 	</script>

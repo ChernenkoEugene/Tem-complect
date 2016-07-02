@@ -44,9 +44,6 @@ $('.catalog_link .mobile_mn').click(function () {
     );
     });
 
-$('.mobile_close_menu').on('click', function () {
-	 $('.mob_wrap').hide(300);
- 	});
 
 $( window ).resize(function() {
 	if($( window ).width() > 639) {
@@ -85,6 +82,6 @@ $('.mobile_tel_popup .close_but').on('click', function () {
 	 });
 
 
-
+$(".fancybox").fancybox();
 
 });

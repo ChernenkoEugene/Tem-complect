@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="css/main.css" />
 	<link rel="stylesheet" href="css/responsive.css" />
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid-3.3.1.min.css" />
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
 </head>
 <body>
 	<div class="wrapper">
@@ -22,7 +23,7 @@
 			<div class="main_head">
 				<div class="row">
 					<div class="col-xs-4">
-						<div class="main_logo">
+						<a href="index.html" class="main_logo">
 							<img src="img/m_logo.png" alt="">
 							<div class="main_logo_compl">
 								<span >Комплект</span>
@@ -30,7 +31,7 @@
 							<div class="main_logo_slogan">
 								<span>Профессионализм. Надежность. Качество.</span>
 							</div>
-						</div>
+						</a>
 					</div>
 					<div class="col-xs-4 mob_big">
 						<div class="main_title">
@@ -68,7 +69,7 @@
 								<div class="head_contacs_links">
 									<a href="tel:+74992715918" class="tel_num">+7 (499) 271-59-18</a>
 									<a href="tel:+74992715918" class="tel_num second_num">+7 (499) 271-59-18</a>
-									<a href="" class="order_call tdu">заказать звонок</a>
+									<a href="#callback" class="order_call tdu fancybox">заказать звонок</a>
 									<a href="mailto:info@tem-k.ru" class="head_contacs_mail tdu">info@tem-k.ru</a>
 								</div>
 								<div class="head_contacs_icons">
@@ -93,7 +94,9 @@
 							</form>
 						</li>
 						<div class="mobile_nav">
-							<div class="mobile_menu_btn_opn"></div>
+							<div class="mobile_menu_btn_opn">
+								<img src="img/cross.svg" alt="">
+							</div>
 							<li class="uncover ttu">главная
 								<ul class="main_submenu">
 									<li><a><p>Направления деятельности</p></a></li>
@@ -139,426 +142,433 @@
 							</div>
 						</li>
 						<div class="mob_wrap">
-							<li class="mobile_close_menu">
-								<div class="close_but">
-									<div class="cross">
-										&times;
+							
+							<li class="catalog_part ttu">
+								<a >
+									<div class="menu_icon">
+										<img src="img/derrick.svg" alt="">
 									</div>
-								</div>
-								<li class="catalog_part ttu">
-									<a >
-										<div class="menu_icon">
-											<img src="img/derrick.svg" alt="">
-										</div>
-										<span>Мачты и опоры освещения</span>
-										<div class="circle_white">
-										</div>
-									</a>
-									<ul class="ul_level_1">
-										<li class="catalog_part_level_1" onclick="event.stopPropagation()" >
-											<a >
-												<span>Мачты</span>
-												<div class="circle_blue">
-												</div>
-											</a>
-											<ul class="ul_level_2">
-												<li class="catalog_part_level_2">
-													<a >
-														<span>Опоры освещения высокомачтовые с <br> мобильной короной ТИП МФГ-М</span>
-													</a>
-												</li>
-												<li class="catalog_part_level_2">
-													<a >
-														<span>Опоры освещения высокомачтовые с<br> мобильной короной ТИП МФГ-М</span>
-													</a>
-												</li>
-												<li class="catalog_part_level_2">
-													<a >
-														<span>Опоры освещения высокомачтовые с<br> мобильной короной ТИП МФГ-М</span>
-													</a>
-												</li>
-												<li class="catalog_part_level_2">
-													<a >
-														<span>Опоры линий электропередач</span>
-													</a>
-												</li>
-											</ul>
-										</li>
-										<li class="catalog_part_level_1" onclick="event.stopPropagation()">
-											<a >
-												<span>Опоры освещения</span>
-												<div class="circle_blue">
-												</div>
-											</a>
-											<ul class="ul_level_2">
-												<li class="catalog_part_level_2">
-													<a >
-														<span>Опоры контактной сети</span>
-													</a>
-												</li>
-												<li class="catalog_part_level_2">
-													<a >
-														<span>Опоры</span>
-													</a>
-												</li>
-												<li class="catalog_part_level_2">
-													<a >
-														<span>Опоры</span>
-													</a>
-												</li>
-												<li class="catalog_part_level_2">
-													<a >
-														<span>Опоры</span>
-													</a>
-												</li>
-												<li class="catalog_part_level_2">
-													<a >
-														<span>Опоры</span>
-													</a>
-												</li>
-												<li class="catalog_part_level_2">
-													<a >
-														<span>Опоры</span>
-													</a>
-												</li>
-											</ul>
-										</li>
-										<li class="catalog_part_level_1" onclick="event.stopPropagation()">
-											<a >
-												<span>Кронштейны</span>
-											</a>
-										</li>
-										<li class="catalog_part_level_1" onclick="event.stopPropagation()">
-											<a >
-												<span>Кронштейны</span>
-											</a>
-										</li>
-										<li class="catalog_part_level_1" onclick="event.stopPropagation()">
-											<a >
-												<span>Кронштейны</span>
-											</a>
-										</li>
-										<li class="catalog_part_level_1" onclick="event.stopPropagation()">
-											<a >
-												<span>Кронштейны</span>
-											</a>
-										</li>
+									<span>Мачты и опоры освещения</span>
+									<div class="circle_white">
+									</div>
+								</a>
+								<ul class="ul_level_1">
+									<li class="catalog_part_level_1" onclick="event.stopPropagation()" >
+										<a >
+											<span>Мачты</span>
+											<div class="circle_blue">
+											</div>
+										</a>
+										<ul class="ul_level_2">
+											<li class="catalog_part_level_2">
+												<a >
+													<span>Опоры освещения высокомачтовые с <br> мобильной короной ТИП МФГ-М</span>
+												</a>
+											</li>
+											<li class="catalog_part_level_2">
+												<a >
+													<span>Опоры освещения высокомачтовые с<br> мобильной короной ТИП МФГ-М</span>
+												</a>
+											</li>
+											<li class="catalog_part_level_2">
+												<a >
+													<span>Опоры освещения высокомачтовые с<br> мобильной короной ТИП МФГ-М</span>
+												</a>
+											</li>
+											<li class="catalog_part_level_2">
+												<a >
+													<span>Опоры линий электропередач</span>
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li class="catalog_part_level_1" onclick="event.stopPropagation()">
+										<a >
+											<span>Опоры освещения</span>
+											<div class="circle_blue">
+											</div>
+										</a>
+										<ul class="ul_level_2">
+											<li class="catalog_part_level_2">
+												<a >
+													<span>Опоры контактной сети</span>
+												</a>
+											</li>
+											<li class="catalog_part_level_2">
+												<a >
+													<span>Опоры</span>
+												</a>
+											</li>
+											<li class="catalog_part_level_2">
+												<a >
+													<span>Опоры</span>
+												</a>
+											</li>
+											<li class="catalog_part_level_2">
+												<a >
+													<span>Опоры</span>
+												</a>
+											</li>
+											<li class="catalog_part_level_2">
+												<a >
+													<span>Опоры</span>
+												</a>
+											</li>
+											<li class="catalog_part_level_2">
+												<a >
+													<span>Опоры</span>
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li class="catalog_part_level_1" onclick="event.stopPropagation()">
+										<a >
+											<span>Кронштейны</span>
+										</a>
+									</li>
+									<li class="catalog_part_level_1" onclick="event.stopPropagation()">
+										<a >
+											<span>Кронштейны</span>
+										</a>
+									</li>
+									<li class="catalog_part_level_1" onclick="event.stopPropagation()">
+										<a >
+											<span>Кронштейны</span>
+										</a>
+									</li>
+									<li class="catalog_part_level_1" onclick="event.stopPropagation()">
+										<a >
+											<span>Кронштейны</span>
+										</a>
+									</li>
+								</li>
+							</ul>
+							<li class="catalog_part ttu">
+								<a >
+									<div class="menu_icon">
+										<img src="img/lamp2.svg" alt="">
+									</div>
+									<span>Светильники и прожектора</span>
+									<div class="circle_white">
+									</div>
+								</a>
+								<ul class="ul_level_1">
+									<li class="catalog_part_level_1" onclick="event.stopPropagation()">
+										<a >
+											<span>Отечественные светильники</span>
+											<div class="circle_blue">
+											</div>
+										</a>
+										<ul class="ul_level_2">
+											<li class="catalog_part_level_2">
+												<a >
+													<span>Опоры контактной сети</span>
+												</a>
+											</li>
+											<li class="catalog_part_level_2">
+												<a >
+													<span>Опоры</span>
+												</a>
+											</li>
+											<li class="catalog_part_level_2">
+												<a >
+													<span>Опоры</span>
+												</a>
+											</li>
+											<li class="catalog_part_level_2">
+												<a >
+													<span>Опоры</span>
+												</a>
+											</li>
+											<li class="catalog_part_level_2">
+												<a >
+													<span>Опоры</span>
+												</a>
+											</li>
+											<li class="catalog_part_level_2">
+												<a >
+													<span>Опоры</span>
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li class="catalog_part_level_1" onclick="event.stopPropagation()">
+										<a >
+											<span>Импортные светильники</span>
+											<div class="circle_blue">
+											</div>
+										</a>
+										<ul class="ul_level_2">
+											<li class="catalog_part_level_2">
+												<a >
+													<span>Опоры</span>
+												</a>
+											</li>
+											<li class="catalog_part_level_2">
+												<a >
+													<span>Опоры</span>
+												</a>
+											</li>
+											<li class="catalog_part_level_2">
+												<a >
+													<span>Опоры</span>
+												</a>
+											</li>
+										</ul>
 									</li>
 								</ul>
-								<li class="catalog_part ttu">
-									<a >
-										<div class="menu_icon">
-											<img src="img/lamp2.svg" alt="">
-										</div>
-										<span>Светильники и прожектора</span>
-										<div class="circle_white">
-										</div>
-									</a>
-									<ul class="ul_level_1">
-										<li class="catalog_part_level_1" onclick="event.stopPropagation()">
-											<a >
-												<span>Отечественные светильники</span>
-												<div class="circle_blue">
-												</div>
-											</a>
-											<ul class="ul_level_2">
-												<li class="catalog_part_level_2">
-													<a >
-														<span>Опоры контактной сети</span>
-													</a>
-												</li>
-												<li class="catalog_part_level_2">
-													<a >
-														<span>Опоры</span>
-													</a>
-												</li>
-												<li class="catalog_part_level_2">
-													<a >
-														<span>Опоры</span>
-													</a>
-												</li>
-												<li class="catalog_part_level_2">
-													<a >
-														<span>Опоры</span>
-													</a>
-												</li>
-												<li class="catalog_part_level_2">
-													<a >
-														<span>Опоры</span>
-													</a>
-												</li>
-												<li class="catalog_part_level_2">
-													<a >
-														<span>Опоры</span>
-													</a>
-												</li>
-											</ul>
-										</li>
-										<li class="catalog_part_level_1" onclick="event.stopPropagation()">
-											<a >
-												<span>Импортные светильники</span>
-												<div class="circle_blue">
-												</div>
-											</a>
-											<ul class="ul_level_2">
-												<li class="catalog_part_level_2">
-													<a >
-														<span>Опоры</span>
-													</a>
-												</li>
-												<li class="catalog_part_level_2">
-													<a >
-														<span>Опоры</span>
-													</a>
-												</li>
-												<li class="catalog_part_level_2">
-													<a >
-														<span>Опоры</span>
-													</a>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-								<li class="catalog_part ttu">
-									<a >
-										<div class="menu_icon">
-											<img src="img/bulb.svg" alt="">
-										</div>
-										<span>Светодиодные светильники</span>
-										<div class="circle_white">
-										</div>
-									</a>
-									<ul class="ul_level_1">
-										<li class="catalog_part_level_1" onclick="event.stopPropagation()">
-											<a >
-												<span>Фонари</span>
-											</a>
-										</li>
-										<li class="catalog_part_level_1" onclick="event.stopPropagation()">
-											<a >
-												<span>Фонари</span>
-											</a>
-										</li>
-										<li class="catalog_part_level_1" onclick="event.stopPropagation()">
-											<a >
-												<span>Фонари</span>
-											</a>
-										</li>
-									</ul>
-								</li>
-								<li class="catalog_part ttu">
-									<a >
-										<div class="menu_icon">
-											<img src="img/lamp.svg" alt="">
-										</div>
-										<span>Декоративные чугунные<br> фонари</span>
-										<div class="circle_white">
-										</div>
-									</a>
-									<ul class="ul_level_1">
-										<li class="catalog_part_level_1" onclick="event.stopPropagation()">
-											<a >
-												<span>Фонари классические</span>
-											</a>
-										</li>
-										<li class="catalog_part_level_1" onclick="event.stopPropagation()">
-											<a >
-												<span>Фонари классические</span>
-											</a>
-										</li>
-										<li class="catalog_part_level_1" onclick="event.stopPropagation()">
-											<a >
-												<span>Фонари классические</span>
-											</a>
-										</li>
-										<li class="catalog_part_level_1" onclick="event.stopPropagation()">
-											<a >
-												<span>Фонари классические</span>
-											</a>
-										</li>
-									</ul>
-								</li>
-								<li class="catalog_part ttu">
-									<a >
-										<div class="menu_icon">
-											<img src="img/gates.svg" alt="">
-										</div>
-										<span>Малые архитектурные<br> формы</span>
-									</a>
-								</li>
-								<li class="catalog_part ttu">
-									<a >
-										<div class="menu_icon">
-											<img src="img/idea.svg" alt="">
-										</div>
-										<span>Лампы</span>
-										<div class="circle_white">
-										</div>
-									</a>
-									<ul class="ul_level_1">
-										<li class="catalog_part_level_1" onclick="event.stopPropagation()">
-											<a >
-												<span>Фонари классические</span>
-											</a>
-										</li>
-										<li class="catalog_part_level_1" onclick="event.stopPropagation()">
-											<a >
-												<span>Фонари классические</span>
-											</a>
-										</li>
-										<li class="catalog_part_level_1" onclick="event.stopPropagation()">
-											<a >
-												<span>Фонари классические</span>
-											</a>
-										</li>
-										<li class="catalog_part_level_1" onclick="event.stopPropagation()">
-											<a >
-												<span>Фонари классические</span>
-											</a>
-										</li>
-									</ul>
-								</li>
-								<li class="catalog_part ttu">
-									<a >
-										<div class="menu_icon">
-											<img src="img/ether.svg" alt="">
-										</div>
-										<span>Электротехнические<br> изделия</span>
-										<div class="circle_white">
-										</div>
-									</a>
-									<ul class="ul_level_1">
-										<li class="catalog_part_level_1" onclick="event.stopPropagation()">
-											<a >
-												<span>Фонари классические</span>
-											</a>
-										</li>
-										<li class="catalog_part_level_1" onclick="event.stopPropagation()">
-											<a >
-												<span>Фонари классические</span>
-											</a>
-										</li>
-										<li class="catalog_part_level_1" onclick="event.stopPropagation()">
-											<a >
-												<span>Фонари классические</span>
-											</a>
-										</li>
-										<li class="catalog_part_level_1" onclick="event.stopPropagation()">
-											<a >
-												<span>Фонари классические</span>
-											</a>
-										</li>
-									</ul>
-								</li>
-							</div>
+							</li>
+							<li class="catalog_part ttu">
+								<a >
+									<div class="menu_icon">
+										<img src="img/bulb.svg" alt="">
+									</div>
+									<span>Светодиодные светильники</span>
+									<div class="circle_white">
+									</div>
+								</a>
+								<ul class="ul_level_1">
+									<li class="catalog_part_level_1" onclick="event.stopPropagation()">
+										<a >
+											<span>Фонари</span>
+										</a>
+									</li>
+									<li class="catalog_part_level_1" onclick="event.stopPropagation()">
+										<a >
+											<span>Фонари</span>
+										</a>
+									</li>
+									<li class="catalog_part_level_1" onclick="event.stopPropagation()">
+										<a >
+											<span>Фонари</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="catalog_part ttu">
+								<a >
+									<div class="menu_icon">
+										<img src="img/lamp.svg" alt="">
+									</div>
+									<span>Декоративные чугунные<br> фонари</span>
+									<div class="circle_white">
+									</div>
+								</a>
+								<ul class="ul_level_1">
+									<li class="catalog_part_level_1" onclick="event.stopPropagation()">
+										<a >
+											<span>Фонари классические</span>
+										</a>
+									</li>
+									<li class="catalog_part_level_1" onclick="event.stopPropagation()">
+										<a >
+											<span>Фонари классические</span>
+										</a>
+									</li>
+									<li class="catalog_part_level_1" onclick="event.stopPropagation()">
+										<a >
+											<span>Фонари классические</span>
+										</a>
+									</li>
+									<li class="catalog_part_level_1" onclick="event.stopPropagation()">
+										<a >
+											<span>Фонари классические</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="catalog_part ttu">
+								<a >
+									<div class="menu_icon">
+										<img src="img/gates.svg" alt="">
+									</div>
+									<span>Малые архитектурные<br> формы</span>
+								</a>
+							</li>
+							<li class="catalog_part ttu">
+								<a >
+									<div class="menu_icon">
+										<img src="img/idea.svg" alt="">
+									</div>
+									<span>Лампы</span>
+									<div class="circle_white">
+									</div>
+								</a>
+								<ul class="ul_level_1">
+									<li class="catalog_part_level_1" onclick="event.stopPropagation()">
+										<a >
+											<span>Фонари классические</span>
+										</a>
+									</li>
+									<li class="catalog_part_level_1" onclick="event.stopPropagation()">
+										<a >
+											<span>Фонари классические</span>
+										</a>
+									</li>
+									<li class="catalog_part_level_1" onclick="event.stopPropagation()">
+										<a >
+											<span>Фонари классические</span>
+										</a>
+									</li>
+									<li class="catalog_part_level_1" onclick="event.stopPropagation()">
+										<a >
+											<span>Фонари классические</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="catalog_part ttu">
+								<a >
+									<div class="menu_icon">
+										<img src="img/ether.svg" alt="">
+									</div>
+									<span>Электротехнические<br> изделия</span>
+									<div class="circle_white">
+									</div>
+								</a>
+								<ul class="ul_level_1">
+									<li class="catalog_part_level_1" onclick="event.stopPropagation()">
+										<a >
+											<span>Фонари классические</span>
+										</a>
+									</li>
+									<li class="catalog_part_level_1" onclick="event.stopPropagation()">
+										<a >
+											<span>Фонари классические</span>
+										</a>
+									</li>
+									<li class="catalog_part_level_1" onclick="event.stopPropagation()">
+										<a >
+											<span>Фонари классические</span>
+										</a>
+									</li>
+									<li class="catalog_part_level_1" onclick="event.stopPropagation()">
+										<a >
+											<span>Фонари классические</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+						</div>
+					</ul>
+				</aside>
+				<!-- aside_left -->
+
+				<article class="main_content ">
+
+					<div class="breadcrumbs">
+						<ul>
+							<li><a class="prevCrumb" href="index.html">Главная</a></li>
+							<li><span>&rsaquo;</span></li>
+							<li><a class="prevCrumb" href="index.html">О компании</a></li>
+							<li><span>&rsaquo;</span></li>
+							<li class="currentCrumb">Направления деятельности</li>
 						</ul>
-					</aside>
-					<!-- aside_left -->
+					</div>
+					<!-- breadcrumbs -->
 
-					<article class="main_content ">
+					<div class="act_head">
+						<h2>Направления деятельности</h2>
+						<h3>Разработка и изготовление металлоконструкций</h3>
+					</div>
 
-						<div class="breadcrumbs">
-							<ul>
-								<li><a class="prevCrumb" href="index.html">Главная</a></li>
-								<li><span>&rsaquo;</span></li>
-								<li><a class="prevCrumb" href="index.html">О компании</a></li>
-								<li><span>&rsaquo;</span></li>
-								<li class="currentCrumb">Направления деятельности</li>
-							</ul>
-						</div>
-						<!-- breadcrumbs -->
-
-						<div class="act_head">
-							<h2>Направления деятельности</h2>
-							<h3>Разработка и изготовление металлоконструкций</h3>
-						</div>
-
-						<div class="act_block">
-							<div class="support_block">
+					<div class="act_block">
+						<div class="support_block">
+							<h4>
+								<img src="img/derrick_blue.svg" alt="">
+								ОПОРЫ и МАЧТЫ НАРУЖНОГО ОСВЕЩЕНИЯ</h4>
+								<p>
+									- опоры  граненые (НФГ, НПГ, ОГК, ОГКф) фланцевые или прямостое
+									<br>
+									- опоры  граненые (НФГ, НПГ, ОГК, ОГКф) фланцевые или прямостое
+									<br>
+									- опоры  граненые (НФГ, НПГ, ОГК, ОГКф) фланцевые или прямостое
+									<br>
+									- опоры  граненые (НФГ, НПГ, ОГК, ОГКф) фланцевые или прямостое
+									<br>
+									- опоры  граненые (НФГ, НПГ, ОГК, ОГКф) фланцевые или прямостое (НФГ, НПГ, ОГК, ОГКф) фланцевые или прямостое (НФГ, НПГ, ОГК, ОГКф) фланцевые или прямостое
+									<br>
+									- опоры  граненые (НФГ, НПГ, ОГК, ОГКф) фланцевые или прямостоефланцевые или прямостое граненые (НФГ, НПГ, ОГК, ОГКф) фланцевые или прямостое
+									<br>
+									- опоры  граненые (НФГ, НПГ, ОГК, ОГКф) фланцевые или прямостое
+									<br>
+									- опоры  граненые (НФГ, НПГ, ОГК, ОГКф) фланцевые или прямостое
+									<br>
+									- опоры  граненые (НФГ, НПГ, ОГК, ОГКф) фланцевые или прямостое
+									<br>
+									- опоры  граненые (НФГ, НПГ, ОГК, ОГКф) фланцевые или прямостое (НФГ, НПГ, ОГК, ОГКф) фланцевые или прямостое (НФГ, НПГ, ОГК, ОГКф) фланцевые или прямостое
+									<br>
+									- опоры  граненые (НФГ, НПГ, ОГК, ОГКф) фланцевые или прямостое
+								</p>
+							</div>
+							<div class="lend_block">
 								<h4>
-									<img src="img/derrick_blue.png" alt="">
-									ОПОРЫ и МАЧТЫ НАРУЖНОГО ОСВЕЩЕНИЯ</h4>
+									<img src="img/led.svg" alt="">ПОСТАВКА ОСВЕТИТЕЛЬНОГО ОБОРУДОВАНИЯ производителей БЛ ТРЭЙД (ГАЛАД, ТМ GALAD), THORN, SITECO, TM Lumenoid, TM XLight</h4>
 									<p>
-										- опоры  граненые (НФГ, НПГ, ОГК, ОГКф) фланцевые или прямостое
+										- Консольные Светильники (ЖКУ,ГКУ, РКУ, НКУ)  под натриевую, ртутную
 										<br>
-										- опоры  граненые (НФГ, НПГ, ОГК, ОГКф) фланцевые или прямостое
+										- Консольные Светильники (ЖКУ,ГКУ, РКУ, НКУ)  под натриевую, ртутную
 										<br>
-										- опоры  граненые (НФГ, НПГ, ОГК, ОГКф) фланцевые или прямостое
+										- Консольные Светильники (ЖКУ,ГКУ, РКУ, НКУ)  под натриевую, ртутную
 										<br>
-										- опоры  граненые (НФГ, НПГ, ОГК, ОГКф) фланцевые или прямостое
+										- Консольные Светильники (ЖКУ,ГКУ, РКУ, НКУ)  под натриевую, ртутную
 										<br>
-										- опоры  граненые (НФГ, НПГ, ОГК, ОГКф) фланцевые или прямостое (НФГ, НПГ, ОГК, ОГКф) фланцевые или прямостое (НФГ, НПГ, ОГК, ОГКф) фланцевые или прямостое
+										- Консольные Светильники (ЖКУ,ГКУ, РКУ, НКУ)  под натриевую, ртутную
 										<br>
-										- опоры  граненые (НФГ, НПГ, ОГК, ОГКф) фланцевые или прямостоефланцевые или прямостое граненые (НФГ, НПГ, ОГК, ОГКф) фланцевые или прямостое
+										- Консольные Светильники (ЖКУ,ГКУ, РКУ, НКУ)  под натриевую, ртутную
 										<br>
-										- опоры  граненые (НФГ, НПГ, ОГК, ОГКф) фланцевые или прямостое
+										- Консольные Светильники (ЖКУ,ГКУ, РКУ, НКУ)  под натриевую, ртутную
 										<br>
-										- опоры  граненые (НФГ, НПГ, ОГК, ОГКф) фланцевые или прямостое
-										<br>
-										- опоры  граненые (НФГ, НПГ, ОГК, ОГКф) фланцевые или прямостое
-										<br>
-										- опоры  граненые (НФГ, НПГ, ОГК, ОГКф) фланцевые или прямостое (НФГ, НПГ, ОГК, ОГКф) фланцевые или прямостое (НФГ, НПГ, ОГК, ОГКф) фланцевые или прямостое
-										<br>
-										- опоры  граненые (НФГ, НПГ, ОГК, ОГКф) фланцевые или прямостое
 									</p>
 								</div>
-								<div class="lend_block">
-									<h4>
-										<img src="img/led.png" alt="">ПОСТАВКА ОСВЕТИТЕЛЬНОГО ОБОРУДОВАНИЯ производителей БЛ ТРЭЙД (ГАЛАД, ТМ GALAD), THORN, SITECO, TM Lumenoid, TM XLight</h4>
-										<p>
-											- Консольные Светильники (ЖКУ,ГКУ, РКУ, НКУ)  под натриевую, ртутную
-											<br>
-											- Консольные Светильники (ЖКУ,ГКУ, РКУ, НКУ)  под натриевую, ртутную
-											<br>
-											- Консольные Светильники (ЖКУ,ГКУ, РКУ, НКУ)  под натриевую, ртутную
-											<br>
-											- Консольные Светильники (ЖКУ,ГКУ, РКУ, НКУ)  под натриевую, ртутную
-											<br>
-											- Консольные Светильники (ЖКУ,ГКУ, РКУ, НКУ)  под натриевую, ртутную
-											<br>
-											- Консольные Светильники (ЖКУ,ГКУ, РКУ, НКУ)  под натриевую, ртутную
-											<br>
-											- Консольные Светильники (ЖКУ,ГКУ, РКУ, НКУ)  под натриевую, ртутную
-											<br>
-										</p>
+							</div>
+
+						</article>
+					</div>
+					<!-- main_content -->
+
+					<footer class="footer">
+						<div class="main_foot">
+							<div class="row">
+								<div class="col-xs-6">
+									<div class="botm_copyright">
+										<span>ООО "ТЭМ Комплект"<sup> ©</sup></span>
+										<span>1990–2016</span>
+										<span>Все права защищены.</span>
+										<span>Копирование без согласия запрещено.</span>
 									</div>
 								</div>
-
-							</article>
-						</div>
-						<!-- main_content -->
-
-						<footer class="footer">
-							<div class="main_foot">
-								<div class="row">
-									<div class="col-xs-6">
-										<div class="botm_copyright">
-											<span>ООО "ТЭМ Комплект"<sup> ©</sup></span>
-											<span>1990–2016</span>
-											<span>Все права защищены.</span>
-											<span>Копирование без согласия запрещено.</span>
+								<div class="col-xs-6">
+									<div class="botm_contacs">
+										<div class="botm_contacs_links">
+											<a href="tel:+74992715918" class="tel_num">+7 (499) 271-59-18</a>
+											<a href="tel:+74992715918" class="tel_num second_num">+7 (499) 271-59-18</a>
+											<a href="mailto:info@tem-k.ru" class="botm_contacs_mail tdu">info@tem-k.ru</a>
 										</div>
-									</div>
-									<div class="col-xs-6">
-										<div class="botm_contacs">
-											<div class="botm_contacs_links">
-												<a href="tel:+74992715918" class="tel_num">+7 (499) 271-59-18</a>
-												<a href="tel:+74992715918" class="tel_num second_num">+7 (499) 271-59-18</a>
-												<a href="mailto:info@tem-k.ru" class="botm_contacs_mail tdu">info@tem-k.ru</a>
+										<div class="botm_contacs_icons">
+											<div class="phone_icon">
 											</div>
-											<div class="botm_contacs_icons">
-												<div class="phone_icon">
-												</div>
-												<div class="mesg_icon">
-												</div>
+											<div class="mesg_icon">
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-						</footer>
-					</div>
+						</div>
+					</footer>
+				</div>
+				<div class="hidden">
+					<form id="callback" class="pop_form">
+						<h3>Заказать звонок</h3>
+						<input type="text" name="name" placeholder="Ваше имя" required />
+						<input type="text" name="phone" placeholder="Ваше телефон" required />
+						<input type="submit" href="#thank" class="submit fancybox" value="Заказать" />
+					</form>
+					<form id="thank" class="pop_form">
+						<h4>Спасибо</h4>
+						<p>За обращение в нашу компанию, в ближайшее время наши специалисты свяжутся с Вами!</p>
+					</form>
+				</div>
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
@@ -567,6 +577,7 @@
 	<![endif]-->
 	<script src="libs/jquery/jquery-1.12.3.min.js"></script>
 	<script src="js/common.js"></script>
+	<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
 	<script type="text/javascript"> 	
 
 	</script>
