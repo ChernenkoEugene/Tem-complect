@@ -1051,6 +1051,9 @@ box-shadow: inset 0px 3px 11px -3px rgba(0,0,0,0.5);
 	.act_block {
 		padding: 10px;
 	}
+	.circle_white.mobile {
+		top: 15px;	
+	}
 }
 @media only screen and (max-width : 450px) {
 	 .hovr_block .cg_icon {
